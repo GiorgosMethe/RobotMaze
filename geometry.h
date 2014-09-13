@@ -2,7 +2,19 @@
 #define GEOMETRY_H
 
 #include <math.h>
+#include <iostream>
+#include <cmath>
+using namespace std;
 
+double d2r(double d)
+{
+    return d * M_PI / 180;
+}
+
+double r2d(double r)
+{
+    return r * 180/ M_PI;
+}
 
 class point
 {
@@ -14,9 +26,48 @@ public:
         x = _x;
         y = _y;
     }
-    float distance(point _point)
+    double distance(point _point)
     {
         return sqrt(pow((x - _point.x),2) + pow((y - _point.y),2));
+    }
+
+    double getAngle(point _point)
+    {
+        return atan2(_point.x - x, _point.y - y);
+    }
+
+    point pointToAngleDis(double distance, double angle)
+    {
+        std::cout << angle << std::endl;
+        point tmp;
+        tmp.x = x + (sin(angle) * distance);
+        tmp.y = y + (cos(angle) * distance);
+        return tmp;
+    }
+};
+
+class pointTheta : public point
+{
+public:
+    double theta;
+    pointTheta(){}
+    pointTheta(double _x, double _y, double _theta)
+    {
+        x = _x;
+        y = _y;
+        theta = _theta;
+    }
+    point pointToDis(double distance)
+    {
+        point tmp;
+        tmp.x = x + (sin(theta) * distance);
+        tmp.y = y + (cos(theta) * distance);
+        return tmp;
+    }
+
+    double getAngleDif(point _point)
+    {
+        return this->getAngle(_point) - theta;
     }
 };
 
@@ -34,11 +85,44 @@ public:
 
     double getAngle()
     {
-        double angle = atan2(end.x-start.x,end.y-start.y);
-        angle = angle * (180 / M_PI);
-        if( angle < 0 )
-            angle += 180;
-        return angle;
+        return start.getAngle(end);
+    }
+
+    point* intersection(point _point, double _angle)
+    {
+        point orientation;
+        pointTheta tmp;
+        tmp.x =_point.x;
+        tmp.y =_point.y;
+        tmp.theta = _angle;
+        orientation = tmp.pointToDis(1.0);
+
+        double x1 = start.x, x2 = end.x;
+        double y1 = start.y, y2 = end.y;
+        double x3 = _point.x, x4 = orientation.x;
+        double y3 = _point.y, y4 = orientation.y;
+        double d = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4);
+
+        if (d == 0) return NULL;
+
+        double pre = (x1*y2 - y1*x2), post = (x3*y4 - y3*x4);
+        double x = ( pre * (x3 - x4) - (x1 - x2) * post ) / d;
+        double y = ( pre * (y3 - y4) - (y1 - y2) * post ) / d;
+
+        if ( x < min(x1, x2) - 10e-5 || x > (max(x1, x2) + 10e-5) )return NULL;
+        if ( y < min(y1, y2) - 10e-5 || y > (max(y1, y2) + 10e-5)  ) return NULL;
+        point* ret = new point();
+        ret->x = x;
+        ret->y = y;
+
+        if(abs(_point.getAngle(*ret) - _angle) > 10e-5) return NULL;
+        return ret;
+    }
+
+    double pointDist(point _point)
+    {
+        double normalLength = hypot(end.x - start.x, end.y - start.y);
+        return fabs((_point.x - start.x) * (end.y - start.y) - (_point.y - start.y) * (end.x - start.x)) / normalLength;
     }
 };
 

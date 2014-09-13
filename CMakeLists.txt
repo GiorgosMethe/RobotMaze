@@ -11,6 +11,8 @@ ADD_EXECUTABLE(
         robotMaze
         main.cpp
         geometry.h
+        randomGenerator.h
+        robot.h
 )
  
 target_link_libraries( robotMaze ${OpenCV_LIBS} ${Boost_LIBRARIES})
