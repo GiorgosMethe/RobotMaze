@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="NEAT" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\NEAT\;CMake Files\Hypercube_NEAT\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\share\;CMake Files\..\..\..\..\..\..\..\usr\share\opencv\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="NEATLib">
+         <Option output="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/out/libNEATLib.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DBUILD_NEAT_DLL" />
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-DNOMINMAX" />
+            <Add option="-DBOOST_ALL_NO_LIB" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../../Libraries/boost-trunk" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../Board/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../JGTL/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../tinyxmldll/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../zlib" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 NEATLib" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="NEATLib/fast">
+         <Option output="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/out/libNEATLib.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DBUILD_NEAT_DLL" />
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-DNOMINMAX" />
+            <Add option="-DBOOST_ALL_NO_LIB" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../../Libraries/boost-trunk" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../Board/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../JGTL/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../tinyxmldll/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../zlib" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 NEATLib/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="NEATLib_pch_dephelp">
+         <Option output="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/out/libNEATLib_pch_dephelp.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DBUILD_NEAT_DLL" />
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-DNOMINMAX" />
+            <Add option="-DBOOST_ALL_NO_LIB" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../../Libraries/boost-trunk" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../Board/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../JGTL/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../tinyxmldll/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../zlib" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 NEATLib_pch_dephelp" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="NEATLib_pch_dephelp/fast">
+         <Option output="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/out/libNEATLib_pch_dephelp.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DBUILD_NEAT_DLL" />
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-DNOMINMAX" />
+            <Add option="-DBOOST_ALL_NO_LIB" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../../Libraries/boost-trunk" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../Board/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../JGTL/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../tinyxmldll/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/../../../zlib" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 NEATLib_pch_dephelp/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="pch_Generate_NEATLib">
+         <Option working_dir="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 pch_Generate_NEATLib" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Hypercube_NEAT">
+         <Option output="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/out/Hypercube_NEAT" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/out" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-D__WXGTK__" />
+            <Add option="-DWXUSINGDLL" />
+            <Add option="-DNOPCH" />
+            <Add option="-D_USE_MATH_DEFINES" />
+            <Add option="-DBOOST_ALL_NO_LIB" />
+            <Add option="-DBOOST_PYTHON_STATIC_LIB" />
+            <Add option="-DNOMINMAX" />
+            <Add option="-DHCUBE_NOGUI" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/../../../VoxSim/VoxBotCreator" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../../Libraries/boost-trunk" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../JGTL/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../tinyxmldll/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../zlib" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../NEAT/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/utils" />
+            <Add directory="/usr/include/opencv" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 Hypercube_NEAT" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Hypercube_NEAT/fast">
+         <Option output="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/out/Hypercube_NEAT" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/out" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-D__WXGTK__" />
+            <Add option="-DWXUSINGDLL" />
+            <Add option="-DNOPCH" />
+            <Add option="-D_USE_MATH_DEFINES" />
+            <Add option="-DBOOST_ALL_NO_LIB" />
+            <Add option="-DBOOST_PYTHON_STATIC_LIB" />
+            <Add option="-DNOMINMAX" />
+            <Add option="-DHCUBE_NOGUI" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/../../../VoxSim/VoxBotCreator" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../../Libraries/boost-trunk" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../JGTL/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../tinyxmldll/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../zlib" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../NEAT/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/utils" />
+            <Add directory="/usr/include/opencv" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 Hypercube_NEAT/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Hypercube_NEAT_Base">
+         <Option output="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/out/libHypercube_NEAT_Base.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-D__WXGTK__" />
+            <Add option="-DWXUSINGDLL" />
+            <Add option="-DNOPCH" />
+            <Add option="-D_USE_MATH_DEFINES" />
+            <Add option="-DBOOST_ALL_NO_LIB" />
+            <Add option="-DBOOST_PYTHON_STATIC_LIB" />
+            <Add option="-DNOMINMAX" />
+            <Add option="-DHCUBE_NOGUI" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/../../../VoxSim/VoxBotCreator" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../../Libraries/boost-trunk" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../JGTL/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../tinyxmldll/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../zlib" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../NEAT/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/utils" />
+            <Add directory="/usr/include/opencv" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 Hypercube_NEAT_Base" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Hypercube_NEAT_Base/fast">
+         <Option output="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/out/libHypercube_NEAT_Base.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-D__WXGTK__" />
+            <Add option="-DWXUSINGDLL" />
+            <Add option="-DNOPCH" />
+            <Add option="-D_USE_MATH_DEFINES" />
+            <Add option="-DBOOST_ALL_NO_LIB" />
+            <Add option="-DBOOST_PYTHON_STATIC_LIB" />
+            <Add option="-DNOMINMAX" />
+            <Add option="-DHCUBE_NOGUI" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/../../../VoxSim/VoxBotCreator" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../../Libraries/boost-trunk" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../JGTL/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../tinyxmldll/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../zlib" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../NEAT/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/utils" />
+            <Add directory="/usr/include/opencv" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 Hypercube_NEAT_Base/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Hypercube_NEAT_Base_pch_dephelp">
+         <Option output="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/out/libHypercube_NEAT_Base_pch_dephelp.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-D__WXGTK__" />
+            <Add option="-DWXUSINGDLL" />
+            <Add option="-DNOPCH" />
+            <Add option="-D_USE_MATH_DEFINES" />
+            <Add option="-DBOOST_ALL_NO_LIB" />
+            <Add option="-DBOOST_PYTHON_STATIC_LIB" />
+            <Add option="-DNOMINMAX" />
+            <Add option="-DHCUBE_NOGUI" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/../../../VoxSim/VoxBotCreator" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../../Libraries/boost-trunk" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../JGTL/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../tinyxmldll/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../zlib" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../NEAT/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/utils" />
+            <Add directory="/usr/include/opencv" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 Hypercube_NEAT_Base_pch_dephelp" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Hypercube_NEAT_Base_pch_dephelp/fast">
+         <Option output="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/out/libHypercube_NEAT_Base_pch_dephelp.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-D__WXGTK__" />
+            <Add option="-DWXUSINGDLL" />
+            <Add option="-DNOPCH" />
+            <Add option="-D_USE_MATH_DEFINES" />
+            <Add option="-DBOOST_ALL_NO_LIB" />
+            <Add option="-DBOOST_PYTHON_STATIC_LIB" />
+            <Add option="-DNOMINMAX" />
+            <Add option="-DHCUBE_NOGUI" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/../../../VoxSim/VoxBotCreator" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../../Libraries/boost-trunk" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../JGTL/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../tinyxmldll/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../../../zlib" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/../NEAT/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include" />
+            <Add directory="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/utils" />
+            <Add directory="/usr/include/opencv" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 Hypercube_NEAT_Base_pch_dephelp/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="pch_Generate_Hypercube_NEAT_Base">
+         <Option working_dir="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 pch_Generate_Hypercube_NEAT_Base" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_RobotMaze.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_XorExperiment.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/HCUBE_Defines.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/HCUBE_EvaluationPanel.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/HCUBE_EvaluationSet.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/HCUBE_ExperimentPanel.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/HCUBE_ExperimentRun.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/HCUBE_GUITemplate.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/HCUBE_MainApp.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/HCUBE_MainFrame.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/HCUBE_NetworkPanel.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/HCUBE_NeuralNetworkPanel.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/HCUBE_NeuralNetworkWeightGrid.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/HCUBE_SubstratePanel.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/HCUBE_UserEvaluationFrame.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/HCUBE_ViewIndividualFrame.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/src/main.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_CoEvoGeneticGeneration.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_Defines.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_FastBiasNetwork.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_FastLayeredNetwork.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_FastNetwork.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_FractalNetwork.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_GeneticGene.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_GeneticGeneration.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_GeneticIndividual.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_GeneticLinkGene.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_GeneticNodeGene.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_GeneticPopulation.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_GeneticSpecies.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_Globals.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_LayeredSubstrate.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_ModularNetwork.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_Network.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_NetworkLink.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_NetworkNode.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_Random.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/src/NEAT_VectorNetwork.cpp">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/Hypercube_NEAT/Hypercube_NEAT_Base_pch_dephelp.cxx">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/NEATLib_pch_dephelp.cxx">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/Experiments/HCUBE_Experiment.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/Experiments/HCUBE_RobotMaze.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/Experiments/HCUBE_XorExperiment.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/Experiments/geometry.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/Experiments/robot.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_Boost.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_Defines.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_EvaluationPanel.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_EvaluationSet.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_ExperimentPanel.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_ExperimentRun.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_GUITemplate.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_MainApp.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_MainFrame.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_NetworkPanel.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_NeuralNetworkPanel.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_NeuralNetworkWeightGrid.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_STL.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_SubstratePanel.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_UserEvaluationFrame.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/include/HCUBE_ViewIndividualFrame.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_CoEvoExperiment.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_CoEvoGeneticGeneration.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_Defines.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_FastBiasNetwork.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_FastLayeredNetwork.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_FastNetwork.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_FractalNetwork.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_GeneticGene.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_GeneticGeneration.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_GeneticIndividual.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_GeneticLinkGene.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_GeneticNodeGene.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_GeneticPopulation.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_GeneticSpecies.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_Globals.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_LayeredSubstrate.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_ModularNetwork.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_Network.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_NetworkLink.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_NetworkNode.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_Random.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_STL.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_VectorNetwork.h">
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/PCHSupport.cmake">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\NEAT\" />
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/Hypercube_NEAT/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Hypercube_NEAT\" />
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/../../../../../../../usr/share/opencv/OpenCVConfig-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\share\opencv\" />
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/../../../../../../../usr/share/opencv/OpenCVConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\share\opencv\" />
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/../../../../../../../usr/share/opencv/OpenCVModules.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\share\opencv\" />
+      </Unit>
+      <Unit filename="/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/../../../../../../../usr/share/opencv/OpenCVModules-release.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\share\opencv\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/JGTL_FloatingUnits.h
+iostream
+-
+complex
+-
+sstream
+-
+
+../include/JGTL_IntegralUnits.h
+iostream
+-
+complex
+-
+sstream
+-
+
+/home/methe/Workspace/RobotMaze/HyperNEAT/JGTL/examples/Units.cpp
+JGTL_IntegralUnits.h
+/home/methe/Workspace/RobotMaze/HyperNEAT/JGTL/examples/JGTL_IntegralUnits.h
+JGTL_FloatingUnits.h
+/home/methe/Workspace/RobotMaze/HyperNEAT/JGTL/examples/JGTL_FloatingUnits.h
+iostream
+-
+complex
+-
+cstdlib
+-
+

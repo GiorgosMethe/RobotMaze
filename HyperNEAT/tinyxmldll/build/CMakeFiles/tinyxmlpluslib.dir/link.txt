@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../out/libtinyxmlpluslib.a  CMakeFiles/tinyxmlpluslib.dir/src/tinyxmlplus.cpp.o CMakeFiles/tinyxmlpluslib.dir/src/tinyxmlparserplus.cpp.o CMakeFiles/tinyxmlpluslib.dir/src/tinyxmlerrorplus.cpp.o
+/usr/bin/ranlib ../out/libtinyxmlpluslib.a

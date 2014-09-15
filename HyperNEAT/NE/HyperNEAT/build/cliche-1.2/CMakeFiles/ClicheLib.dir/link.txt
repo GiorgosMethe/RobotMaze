@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../out/libClicheLib.a  CMakeFiles/ClicheLib.dir/cliche.c.o CMakeFiles/ClicheLib.dir/simplech.c.o
+/usr/bin/ranlib ../../out/libClicheLib.a

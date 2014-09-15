@@ -1,0 +1,1 @@
+/usr/bin/cc  -O3 -DNDEBUG -rdynamic -g -DRELEASE_MODE -msse2 -DNDEBUG -fPIC    CMakeFiles/ClicheExe.dir/cliche.c.o CMakeFiles/ClicheExe.dir/simplech.c.o  -o ../../out/ClicheExe -rdynamic 

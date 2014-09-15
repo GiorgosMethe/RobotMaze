@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG -rdynamic -g -DRELEASE_MODE -msse2 -DNDEBUG    CMakeFiles/ColorTests.dir/tests/ColorTests.cpp.o  -o ../out/ColorTests  -L/home/methe/Workspace/RobotMaze/HyperNEAT/JGTL/../../../Libraries/boost-trunk/stage/lib -rdynamic 

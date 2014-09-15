@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/JGTL_ConsoleColor.h
+JGTL_LocatedException.h
+../include/JGTL_LocatedException.h
+cstdio
+-
+cstdlib
+-
+iostream
+-
+sstream
+-
+windows.h
+-
+
+../include/JGTL_LocatedException.h
+string
+-
+sstream
+-
+cstdio
+-
+
+/home/methe/Workspace/RobotMaze/HyperNEAT/JGTL/tests/ColorTests.cpp
+JGTL_ConsoleColor.h
+/home/methe/Workspace/RobotMaze/HyperNEAT/JGTL/tests/JGTL_ConsoleColor.h
+stdio.h
+-
+iostream
+-
+

@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../out/libNEATLib_pch_dephelp.a  CMakeFiles/NEATLib_pch_dephelp.dir/NEATLib_pch_dephelp.cxx.o
+/usr/bin/ranlib ../../out/libNEATLib_pch_dephelp.a

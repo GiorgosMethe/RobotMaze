@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*[Nn][Ee][Aa][Tt][_].*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_Defines.h
+NEAT_STL.h
+/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_STL.h
+
+/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_STL.h
+
+/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/build/NEAT/NEATLib_pch_dephelp.cxx
+/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/NEAT/include/NEAT_Defines.h
+-
+

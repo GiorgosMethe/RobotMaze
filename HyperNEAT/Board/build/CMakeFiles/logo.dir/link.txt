@@ -1,0 +1,1 @@
+/usr/bin/c++   -g -g -Wall -Wno-unused-variable -g    CMakeFiles/logo.dir/examples/logo.cpp.o  -o ../out/logo  -L/home/methe/Workspace/RobotMaze/HyperNEAT/Board/out -rdynamic ../out/libboard.a -Wl,-rpath,/home/methe/Workspace/RobotMaze/HyperNEAT/Board/out 

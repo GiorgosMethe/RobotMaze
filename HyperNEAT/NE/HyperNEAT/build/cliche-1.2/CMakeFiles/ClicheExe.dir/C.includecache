@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/cliche-1.2/cliche.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+time.h
+-
+assert.h
+-
+simplech.h
+/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/cliche-1.2/simplech.h
+
+/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/cliche-1.2/simplech.c
+simplech.h
+/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/cliche-1.2/simplech.h
+
+/home/methe/Workspace/RobotMaze/HyperNEAT/NE/HyperNEAT/cliche-1.2/simplech.h
+stdio.h
+-
+string.h
+-
+time.h
+-
+windows.h
+-
+
