@@ -184,8 +184,6 @@ void ExperimentRun::start()
         cv::line(base, p1, p2, CV_RGB(0, 0, 0), 5, CV_AA);
 
     }
-    cv::circle(base, cv::Point(goal.x * 1000, 1000 - goal.y * 1000), 20, CV_RGB(0, 200, 0), -1, CV_AA);
-    cv::circle(base, cv::Point(robot.x * 1000, 1000 - robot.y * 1000), 20, CV_RGB(0, 0, 200), -1, CV_AA);
 
     cout << "Experiment started\n";
 #ifndef _DEBUG
@@ -248,13 +246,16 @@ void ExperimentRun::start()
 
             for(int a=0;a<generation->getIndividualCount();a++)
             {
-                cv::circle(base, cv::Point(generation->getIndividual(a)->behavior.x * 1000, 1000 - generation->getIndividual(a)->behavior.y * 1000), 2, CV_RGB(200, 0, 200), -1, CV_AA);
+                cv::circle(base, cv::Point(generation->getIndividual(a)->behavior.x * 1000, 1000 - generation->getIndividual(a)->behavior.y * 1000), 2, CV_RGB(200, 0, 0), -1, CV_AA);
             }
+            cv::circle(base, cv::Point(goal.x * 1000, 1000 - goal.y * 1000), 20, CV_RGB(0, 200, 0), -1, CV_AA);
+            cv::circle(base, cv::Point(robot.x * 1000, 1000 - robot.y * 1000), 20, CV_RGB(0, 0, 200), -1, CV_AA);
             cv::namedWindow("maze", CV_NORMAL);
             cv::imshow("maze", base);
             cv::waitKey(10);
 
         }
+        cv::imwrite( "finalNovelty.jpg", base );
         cout << "Experiment finished\n";
 
         //cout << "Saving Dump...";

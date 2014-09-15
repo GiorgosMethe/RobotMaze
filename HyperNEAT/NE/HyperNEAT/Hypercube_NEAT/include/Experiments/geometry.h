@@ -127,13 +127,11 @@ public:
             {
                 xx = start.x;
                 yy = start.y;
-                return 100;
             }
             else if(param > 1)
             {
                 xx = end.x;
                 yy = end.y;
-                return 100;
             }
             else
             {

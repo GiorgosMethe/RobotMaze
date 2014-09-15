@@ -142,35 +142,35 @@ void RobotMaze::drive(robot &_robot, vector<lineSegment> walls, double turn, dou
         _robot.position.x = newPosition.x;
         _robot.position.y = newPosition.y;
     }
-    else
-    {
-        double dx = newPosition.x - _robot.position.x;
-        double dy = newPosition.y - _robot.position.y;
-        point newPosition; newPosition.x = _robot.position.x + dx; newPosition.y = _robot.position.y;
-        bool isValid = true;
-        for (int i = 0; i < walls.size(); ++i) {
-            if ((walls.at(i).pointDist(newPosition, true)) < _robot.radius) isValid = false;
-        }
-        if(isValid)
-        {
-            _robot.position.x = newPosition.x;
-            _robot.position.y = newPosition.y;
-        }
-        else
-        {
-            isValid = true;
-            point newPosition; newPosition.y = _robot.position.y + dy; newPosition.x = _robot.position.x;
-            bool isValid = true;
-            for (int i = 0; i < walls.size(); ++i) {
-                if ((walls.at(i).pointDist(newPosition, true)) < _robot.radius) isValid = false;
-            }
-            if(isValid)
-            {
-                _robot.position.x = newPosition.x;
-                _robot.position.y = newPosition.y;
-            }
-        }
-    }
+//    else
+//    {
+//        double dx = newPosition.x - _robot.position.x;
+//        double dy = newPosition.y - _robot.position.y;
+//        point newPosition; newPosition.x = _robot.position.x + dx; newPosition.y = _robot.position.y;
+//        bool isValid = true;
+//        for (int i = 0; i < walls.size(); ++i) {
+//            if ((walls.at(i).pointDist(newPosition, true)) < _robot.radius) isValid = false;
+//        }
+//        if(isValid)
+//        {
+//            _robot.position.x = newPosition.x;
+//            _robot.position.y = newPosition.y;
+//        }
+//        else
+//        {
+//            isValid = true;
+//            point newPosition; newPosition.y = _robot.position.y + dy; newPosition.x = _robot.position.x;
+//            bool isValid = true;
+//            for (int i = 0; i < walls.size(); ++i) {
+//                if ((walls.at(i).pointDist(newPosition, true)) < _robot.radius) isValid = false;
+//            }
+//            if(isValid)
+//            {
+//                _robot.position.x = newPosition.x;
+//                _robot.position.y = newPosition.y;
+//            }
+//        }
+//    }
     _robot.position.theta = remainder(_robot.position.theta, 2*M_PI);
 }
 
