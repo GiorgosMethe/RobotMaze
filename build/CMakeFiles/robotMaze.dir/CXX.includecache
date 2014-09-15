@@ -51,4 +51,6 @@ boost/algorithm/string/split.hpp
 /home/methe/Workspace/RobotMaze/boost/algorithm/string/split.hpp
 boost/algorithm/string/classification.hpp
 /home/methe/Workspace/RobotMaze/boost/algorithm/string/classification.hpp
+boost/timer.hpp
+/home/methe/Workspace/RobotMaze/boost/timer.hpp
 

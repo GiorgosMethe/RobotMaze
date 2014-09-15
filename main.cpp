@@ -8,6 +8,7 @@
 #include<opencv2/opencv.hpp>
 #include "boost/algorithm/string/split.hpp"
 #include "boost/algorithm/string/classification.hpp"
+#include "boost/timer.hpp"
 
 
 using namespace std;
@@ -75,42 +76,48 @@ void readMaze(robot &_robot, point &goal, vector<lineSegment> &walls)
     }
 }
 
-int main()
+
+void driveRandom(robot &_robot, vector<lineSegment> walls)
 {
-    seed();
-    robot _robot;
-    point goal;
-    vector<lineSegment> walls;
-
-    readMaze(_robot, goal, walls);
-
-    for (int var = 0; var < 10000; ++var) {
-        _robot.updateSensors(goal, walls);
-        _robot.position.theta -= d2r(unifRand());
+    _robot.position.theta -= d2r(50 * unifRand() - 25);
 
 
-        double distance = 0.05 * unifRand();
+    double distance = 0.01;
 
-        double minDist = 100.0;
-        double angle = (distance > 0) ? 0 : M_PI;
-        for (int i = 0; i < walls.size(); ++i) {
-            point* a = walls.at(i).intersection(_robot.position, remainder(_robot.position.theta + angle, 2*M_PI));
-            if (a != NULL)
+    double minDist = 100.0;
+    double angle = (distance > 0) ? 0 : M_PI;
+    for (int i = 0; i < walls.size(); ++i) {
+        point a;
+        if (walls.at(i).intersection(_robot.position, remainder(_robot.position.theta + angle, 2*M_PI), a))
+        {
+            double tmpDis = _robot.position.distance(a);
+            if(tmpDis < minDist)
             {
-                double tmpDis = _robot.position.distance(*a);
-                if(tmpDis < minDist)
-                {
-                    minDist = tmpDis;
-                }
+                minDist = tmpDis;
             }
         }
+    }
 
-        distance = min(distance, (minDist - _robot.radius));
+    distance = min(distance, (minDist - _robot.radius));
 
-        point newPosition = _robot.position.pointToDis(distance);
+    point newPosition = _robot.position.pointToDis(distance);
+    bool isValid = true;
+    for (int i = 0; i < walls.size(); ++i) {
+        if ((walls.at(i).pointDist(newPosition, true)) < _robot.radius) isValid = false;
+    }
+    if(isValid)
+    {
+        _robot.position.x = newPosition.x;
+        _robot.position.y = newPosition.y;
+    }
+    else
+    {
+        double dx = newPosition.x - _robot.position.x;
+        double dy = newPosition.y - _robot.position.y;
+        point newPosition; newPosition.x = _robot.position.x + dx; newPosition.y = _robot.position.y;
         bool isValid = true;
         for (int i = 0; i < walls.size(); ++i) {
-            if ((walls.at(i).pointDist(newPosition)) < _robot.radius) isValid = false;
+            if ((walls.at(i).pointDist(newPosition, true)) < _robot.radius) isValid = false;
         }
         if(isValid)
         {
@@ -119,34 +126,41 @@ int main()
         }
         else
         {
-            double dx = newPosition.x - _robot.position.x;
-            double dy = newPosition.y - _robot.position.y;
-            point newPosition; newPosition.x = _robot.position.x + dx; newPosition.y = _robot.position.y;
+            isValid = true;
+            point newPosition; newPosition.y = _robot.position.y + dy; newPosition.x = _robot.position.x;
             bool isValid = true;
             for (int i = 0; i < walls.size(); ++i) {
-                if ((walls.at(i).pointDist(newPosition)) < _robot.radius) isValid = false;
+                if ((walls.at(i).pointDist(newPosition, true)) < _robot.radius) isValid = false;
             }
             if(isValid)
             {
                 _robot.position.x = newPosition.x;
                 _robot.position.y = newPosition.y;
             }
-            else
-            {
-                point newPosition; newPosition.y = _robot.position.y + dy; newPosition.x = _robot.position.x;
-                bool isValid = true;
-                for (int i = 0; i < walls.size(); ++i) {
-                    if ((walls.at(i).pointDist(newPosition)) < _robot.radius) isValid = false;
-                }
-                if(isValid)
-                {
-                    _robot.position.x = newPosition.x;
-                    _robot.position.y = newPosition.y;
-                }
-            }
         }
-        _robot.position.theta = remainder(_robot.position.theta, 2*M_PI);
-        drawMaze(_robot, goal, walls);
+    }
+    _robot.position.theta = remainder(_robot.position.theta, 2*M_PI);
+}
+
+int main()
+{
+    seed();
+    for (int var = 0; var < 100000000; ++var) {
+        cout << var << endl;
+        robot* _robot = new robot();
+        point goal;
+        vector<lineSegment> walls;
+        readMaze(*_robot, goal, walls);
+        boost::timer timer;
+        double simulationTime = 0;
+        for (int var = 0; var < 10000; ++var) {
+            _robot->updateSensors(goal, walls);
+            driveRandom(*_robot, walls);
+//            //        drawMaze(_robot, goal, walls);
+        }
+        std::cout << "Simulation took: " << timer.elapsed() << " Seconds to complete.\n" << std::endl;
+        delete _robot;
+        walls.clear();
     }
     return 0;
 }

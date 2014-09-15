@@ -88,7 +88,7 @@ public:
         return start.getAngle(end);
     }
 
-    point* intersection(point _point, double _angle)
+    bool intersection(point _point, double _angle, point &ret)
     {
         point orientation;
         pointTheta tmp;
@@ -109,21 +109,53 @@ public:
         double x = ( pre * (x3 - x4) - (x1 - x2) * post ) / d;
         double y = ( pre * (y3 - y4) - (y1 - y2) * post ) / d;
 
-        if ( x < min(x1, x2) - 10e-5 || x > (max(x1, x2) + 10e-5) )return NULL;
-        if ( y < min(y1, y2) - 10e-5 || y > (max(y1, y2) + 10e-5)  ) return NULL;
-        point* ret = new point();
-        ret->x = x;
-        ret->y = y;
+        if ( x < min(x1, x2) - 10e-5 || x > (max(x1, x2) + 10e-5) )return false;
+        if ( y < min(y1, y2) - 10e-5 || y > (max(y1, y2) + 10e-5)  ) return false;
 
-        if(abs(_point.getAngle(*ret) - _angle) > 10e-5) return NULL;
-        return ret;
+        ret.x = x;
+        ret.y = y;
+
+        if(abs(_point.getAngle(ret) - _angle) > 10e-5) return false;
+        return true;
     }
 
-    double pointDist(point _point)
+    double pointDist(point _point, bool segment=false)
     {
+        if(segment)
+        {
+            double A = _point.x - start.x;
+            double B = _point.y - start.y;
+            double C = end.x - start.x;
+            double D = end.y - start.y;
+
+            double dot = A * C + B * D;
+            double len_sq = C * C + D * D;
+            double param = dot / len_sq;
+            double xx,yy;
+            if(param < 0)
+            {
+                xx = start.x;
+                yy = start.y;
+                return 100;
+            }
+            else if(param > 1)
+            {
+                xx = end.x;
+                yy = end.y;
+                return 100;
+            }
+            else
+            {
+                xx = start.x + param * C;
+                yy = start.y + param * D;
+            }
+            point tmp; tmp.x = xx; tmp.y = yy;
+            return _point.distance(tmp);
+        }
         double normalLength = hypot(end.x - start.x, end.y - start.y);
         return fabs((_point.x - start.x) * (end.y - start.y) - (_point.y - start.y) * (end.x - start.x)) / normalLength;
     }
+
 };
 
 

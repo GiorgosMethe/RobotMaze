@@ -35,8 +35,11 @@ public:
     {
 
     }
+    ~robot()
+    {
+    }
 
-    void updateSensors(point goal, std::vector<lineSegment> walls)
+    void updateSensors(point goal, std::vector<lineSegment> &walls)
     {
         double radarValue = position.getAngleDif(goal);
 
@@ -44,9 +47,9 @@ public:
         radarSensor[radarE] = (radarValue >= M_PI_4 && radarValue < 3*M_PI_4);
         radarSensor[radarW] = (radarValue >= -3*M_PI_4 && radarValue < -M_PI_4);
         radarSensor[radarS] = ((radarValue < -3*M_PI_4 && radarValue <= 0) || (radarValue <= M_PI && radarValue >= 3*M_PI_4));
-        cout << "Radar: " << radarSensor[radarN] << "," << radarSensor[radarN] << "," << radarSensor[radarE] << "," << radarSensor[radarS] << "," << radarSensor[radarW] << endl;
+//        cout << "Radar: " << radarSensor[radarN] << "," << radarSensor[radarN] << "," << radarSensor[radarE] << "," << radarSensor[radarS] << "," << radarSensor[radarW] << endl;
 
-        cout << "RangeFinder: ";
+//        cout << "RangeFinder: ";
         for(int range = rangeFinderN; range <= rangeFinderS; range++)
         {
             double angleRange = 0.0;
@@ -76,22 +79,21 @@ public:
             }
 
             double minDist = 100.0;
+            point a;
             for (int i = 0; i < walls.size(); ++i) {
-                point* a = walls.at(i).intersection(position, remainder(position.theta + angleRange,2*M_PI));
-                if (a != NULL)
+                if (walls.at(i).intersection(position, remainder(position.theta + angleRange,2*M_PI), a))
                 {
-                    double tmpDis = position.distance(*a);
+                    double tmpDis = position.distance(a);
                     if(tmpDis < minDist)
                     {
                         minDist = tmpDis;
                     }
-
                 }
             }
             rangeFinderSensor[foo] = minDist;
-            cout << foo << " " << rangeFinderSensor[foo] << ",   ";
+//            cout << foo << " " << rangeFinderSensor[foo] << ",   ";
         }
-        cout << endl;
+//        cout << endl;
     }
 };
 
